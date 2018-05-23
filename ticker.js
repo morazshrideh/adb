@@ -20,7 +20,7 @@ var entries; var feed;
 
 var feed_url = blog_url.match(/\/$/) ? blog_url : blog_url+"/";
 
-feed_url += "feeds/posts/اخبار%20الاردن";
+feed_url += "feeds/posts/default";
 
 function recent_post_createEntries(){
 
@@ -86,7 +86,7 @@ function recent_post_start(json){
 
 function recent_post_text(){
 
-    var src = feed_url+"?alt=json-in-script&callback=recent_post_start&max-results="+اخبار%20الاردن;
+    var src = feed_url+"?alt=json-in-script&callback=recent_post_start&max-results="+latest_post;
 
     var s = "<script src='"+src+"'></script>";
 
@@ -148,7 +148,7 @@ function recent_post_content(){
 
     s += "  <marquee style='float:right; margin-right:10px; width:82%' scrollAmount='"+scrolling_speed+"'>";
 
-    for(var i=0; i<اخبار%20الاردن; i++){
+    for(var i=0; i<latest_post; i++){
 
         var recent_post_entries = entries[i];
 
@@ -158,7 +158,7 @@ function recent_post_content(){
 
         s += ">" + recent_post_entries.title + "</a>";
 
-        if(i != اخبار%20الاردن-1){s += " | ";}
+        if(i != latest_post-1){s += " | ";}
 
     }
 
