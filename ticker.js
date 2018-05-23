@@ -126,7 +126,7 @@ function recent_post_content(){
 
     if(info_text){
 
-	s += "<div style='float:right'>";
+	s += "<div style='float:left'>";
 
     s += " <a href='"+feed_url+"'>";
 
