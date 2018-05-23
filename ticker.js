@@ -86,7 +86,7 @@ function recent_post_start(json){
 
 function recent_post_text(){
 
-    var src = feed_url+"?alt=json-in-script&callback=recent_post_start&max-results="+latest_post;
+    var src = feed_url+"?alt=json-in-script&callback=recent_post_start&max-results="+اخبار%20الاردن;
 
     var s = "<script src='"+src+"'></script>";
 
