@@ -146,7 +146,7 @@ function recent_post_content(){
 
     }
 
-    s += "  <marquee style='float:right; margin-right:10px; width:82%' scrollAmount='"+scrolling_speed+"'>";
+    s += "  <marquee style='float:left; margin-left:10px; width:82%' scrollAmount='"+scrolling_speed+"'>";
 
     for(var i=0; i<latest_post; i++){
 
