@@ -138,7 +138,7 @@ function recent_post_content(){
 
     s += "</div>";
 
-    s += "<div style='float:right; text-align:left; margin-right:20px;'>";
+    s += "<div style='float:right; text-align:left; margin-right:2px;'>";
 
     s += "اخر الاخبار:";
 
@@ -146,7 +146,7 @@ function recent_post_content(){
 
     }
 
-    s += "  <marquee style='float:left; margin-left:10px; width:82%' scrollAmount='"+scrolling_speed+"'>";
+    s += "  <marquee style='float:left; margin-left:2px; width:82%' scrollAmount='"+scrolling_speed+"'>";
 
     for(var i=0; i<latest_post; i++){
 
@@ -166,7 +166,7 @@ function recent_post_content(){
 
     if(close_button){
 
-	s += "<div style='float:left; margin-left:10px;'>";
+	s += "<div style='float:right; margin-right:2px;'>";
 
     s += "<a href='javascript:void(0)' onclick='document.getElementById(\"recent_post\").style.display=\"none\"'>";
 
